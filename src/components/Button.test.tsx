@@ -22,5 +22,5 @@ it('should call the handler twice when clicked twice', () => {
   screen.getByText(/count: 0/i)
   user.click(screen.getByTestId(/counterbutton/i))
   user.click(screen.getByTestId(/counterbutton/i))
-  expect(counterHandler).toBeCalledTimes(1)
+  expect(counterHandler).toBeCalledTimes(2)
 })
