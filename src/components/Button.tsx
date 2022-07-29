@@ -4,6 +4,7 @@ export default function Button ({ count, incrementor}: ButtonProps) {
   return (
     <div className={wrapper}>
       <div 
+        data-testid="CounterButton"
         className={button}
         onClick={incrementor}
       >
