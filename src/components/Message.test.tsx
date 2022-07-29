@@ -4,5 +4,5 @@ import Message from './Message';
 it('should render the dropdown menu', () => {
   render(<Message message={""}/>)
   // screen.getByText(/favorite dog/i)
-  screen.getByLabelText('messge box')
+  screen.getByLabelText('message box')
 })
