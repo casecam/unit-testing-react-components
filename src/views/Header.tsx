@@ -3,7 +3,7 @@ import React from 'react'
 export default function Header() {
   return (
     <div className={header}>
-     | Link 1 | Link 2 | Link 3 | Link 4 |
+     | Link | Link 2 | Link 3 | Link 4 |
     </div>
   )
 }

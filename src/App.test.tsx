@@ -4,5 +4,5 @@ import App from './App';
 
 test('renders four links', () => {
   render(<App />);
-  screen.getByText(/\| lnk 1 \| link 2 \| link 3 \| link 4 \|/i)
+  screen.getByText(/\| link 1 \| link 2 \| link 3 \| link 4 \|/i)
 });
