@@ -10,7 +10,7 @@ export default function Footer() {
 
 const footer = `
   flex
-  justify-end
+  justify-center
   text-gray-500
   text-xs
 `

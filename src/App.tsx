@@ -4,7 +4,9 @@ function App() {
   return (
     <div className={app}>
       <Header />
-      <Main />
+      <div className={wrapper}>
+        <Main />
+      </div>
       <Footer />
     </div>
   );
@@ -13,6 +15,11 @@ function App() {
 export default App;
 
 const app = `
+  min-h-screen
+  bg-gray-100
+`
+
+const wrapper = `
   flex
-  flex-col
+  justify-center
 `

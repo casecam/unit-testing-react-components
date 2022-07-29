@@ -1,9 +1,13 @@
-import Form from "../../components/Form";
+import { Counter, Form, Menu} from "../../components/index";
 
 export default function Main() {
   return (
     <div className={main}>
-      <Form />
+      <Menu />
+      <div className={wrapper}>
+        <Form />
+        <Counter />
+      </div>
     </div>
   )
 }
@@ -11,4 +15,21 @@ export default function Main() {
 const main = `
   flex
   justify-center
+  shadow
+  appearance-none
+  border
+  rounded
+  focus:outline-none
+  focus:shadow-outline
+  bg-white
+  shadow-md
+  rounded
+  px-8
+  pt-6
+  pb-8
+  mb-4"
+  w-auto
+`
+const wrapper = `
+
 `

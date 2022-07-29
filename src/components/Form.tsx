@@ -2,25 +2,23 @@ import React from 'react'
 
 export default function Form () {
   return (
-    <form className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
-      <label className="block text-gray-700 text-sm font-bold mb-2">Input some text here:
-        <input className={input} id="text" type="text" placeholder="Input text"/>
+    <form className={container}>
+      <label className={label}>Input Dog's Name Here:
+        <input className={input} id="text" type="text" placeholder="Dog's Name"/>
       </label>
-      <button className={button} type="submit">Submit</button>
     </form>
   )
 }
 
-const button = `
-  bg-blue-500
-  hover:bg-blue-700
-  text-white
+const container = `
+`
+
+const label = `
+  block
+  text-gray-700
+  text-sm
   font-bold
-  py-2
-  px-4
-  rounded
-  focus:outline-none
-  focus:shadow-outline
+  mb-2
 `
 
 const input = `
