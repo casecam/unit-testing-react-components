@@ -14,5 +14,5 @@ it('should render a "button" and call the handler when clicked', () => {
   render(<Button count={0} incrementor={counterHandler} />)
   screen.getByText(/count: 0/i)
   user.click(screen.getByTestId(/counterbutton/i))
-  expect(counterHandler).toBeCalledTimes(0)
+  expect(counterHandler).toBeCalledTimes(1)
 })
