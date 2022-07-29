@@ -3,22 +3,29 @@ import { Form, Menu, Message } from "../components/index";
 import Counter from "./Counter";
 
 export default function Main() {
+  const [formState, setFormState] = useState('')
   const [message, setMessage] = useState('')
 
-  const messageHandler = () => {
-    setMessage('INTERIM_MESSAGE')
-  }
+  const handleSubmit = (event: React.SyntheticEvent) => {
+    event.preventDefault();
+    setMessage(`We submitted ${formState}`);
+
+  };
 
   return (
     <div className={main}>
       <Menu />
       <div className={wrapper}>
-        <Form messageHandler={messageHandler} message={message} />
+        <Form
+          setFormState={setFormState}
+          formState={formState}
+          handleSubmit={handleSubmit}
+        />
         <Message message={message} />
         <Counter />
       </div>
     </div>
-  )
+  );
 }
 
 const main = `

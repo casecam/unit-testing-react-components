@@ -1,16 +1,20 @@
 import React from 'react'
 import { FormProps } from '../utils/types';
 
-export default function Form ({ messageHandler, message }: FormProps) {
-  const handleSubmit = (event: React.SyntheticEvent) => {
-    event.preventDefault()
-    messageHandler(message)
-    
+export default function Form ({ handleSubmit, setFormState, formState }: FormProps) {
+  const handleChange = (event: React.FormEvent<HTMLInputElement>) => {
+    setFormState(event.currentTarget.value);
   }
   return (
     <form onSubmit={handleSubmit}>
       <label className={label}>Input Dog's Name Here:
-        <input className={input} id="text" type="text" placeholder="Dog's Name"/>
+        <input
+          className={input}
+          id="text"
+          type="text"
+          value={formState}
+          onChange={handleChange}
+          placeholder="Dog's Name"/>
       </label>
       <button className={button} type="submit">Submit</button>
     </form>

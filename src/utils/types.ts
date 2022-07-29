@@ -4,8 +4,10 @@ export interface ButtonProps {
 }
 
 export interface FormProps {
-  messageHandler: Function,
-  message: string
+  // messageHandler: Function,
+  setFormState: Function
+  formState: string
+  handleSubmit: React.FormEventHandler<HTMLFormElement>;
 }
 export interface MessageProps {
   message: string,
