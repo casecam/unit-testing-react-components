@@ -1,9 +1,6 @@
-interface ButtonProps {
-  count: number,
-  incrementor: () => void
-}
-export default function Button ({ count, incrementor}: ButtonProps) {
+import { ButtonProps } from "../utils/types"
 
+export default function Button ({ count, incrementor}: ButtonProps) {
   return (
     <div className={wrapper}>
       <div 
