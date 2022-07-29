@@ -2,7 +2,7 @@
 export default function Menu() {
   return (
     <div className={menu}>
-        <label htmlFor="dogs">Favorite Dog</label>
+        <label htmlFor="dogs">Favorite Dig</label>
         <select
           className={dropdown}
           name="dogs"
