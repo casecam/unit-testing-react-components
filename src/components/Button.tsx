@@ -1,13 +1,17 @@
 import React from 'react'
 
-export default function Counter () {
+export default function Button () {
+  const handleClick = (e: React.MouseEvent<HTMLElement>) => { 
+    console.log('clicked');
+  }
   return (
     <div className={wrapper}>
-      <button 
+      <div 
         className={button}
-        type="submit">
+        onClick={handleClick}
+      >
           Count: 0
-        </button>
+      </div>
     </div>
   )
 }

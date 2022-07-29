@@ -1,5 +1,5 @@
-import Counter from "./Counter";
+import Button from "./Button";
 import Form from "./Form";
 import Menu from "./Menu";
 
-export { Counter, Form, Menu}
+export { Button, Form, Menu}

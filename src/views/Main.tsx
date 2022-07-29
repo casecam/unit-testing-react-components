@@ -1,4 +1,5 @@
-import { Counter, Form, Menu} from "../../components/index";
+import { Form, Menu } from "../components/index";
+import Counter from "./Counter";
 
 export default function Main() {
   return (
