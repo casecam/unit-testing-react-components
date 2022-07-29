@@ -8,7 +8,7 @@ export default function Form () {
   }
   return (
     <form onSubmit={handleSubmit}>
-      <label className={label}>Input Dog's Name Here:
+      <label className={label}>Input Dogs Name Here:
         <input className={input} id="text" type="text" placeholder="Dog's Name"/>
       </label>
       <button className={button} type="submit">Submit</button>
