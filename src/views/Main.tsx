@@ -1,12 +1,20 @@
-import { Form, Menu } from "../components/index";
+import { useState } from "react";
+import { Form, Menu, Message } from "../components/index";
 import Counter from "./Counter";
 
 export default function Main() {
+  const [message, setMessage] = useState('')
+
+  const messageHandler = () => {
+    setMessage('INTERIM_MESSAGE')
+  }
+
   return (
     <div className={main}>
       <Menu />
       <div className={wrapper}>
-        <Form />
+        <Form messageHandler={messageHandler} message={message} />
+        <Message message={message} />
         <Counter />
       </div>
     </div>

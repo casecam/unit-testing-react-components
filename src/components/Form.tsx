@@ -1,9 +1,10 @@
 import React from 'react'
+import { FormProps } from '../utils/types';
 
-export default function Form () {
+export default function Form ({ messageHandler, message }: FormProps) {
   const handleSubmit = (event: React.SyntheticEvent) => {
     event.preventDefault()
-    console.log('clicked the form');
+    messageHandler(message)
     
   }
   return (

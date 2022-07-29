@@ -12,7 +12,6 @@ export default function Menu() {
           <option value={'Chocolate Lab'}>Chocolate Lab</option>
           <option value={'Yellow Lab'}>Yellow Lab</option>
         </select>
-
     </div>
   )
 }
