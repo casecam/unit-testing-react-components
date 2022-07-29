@@ -9,3 +9,13 @@ it('should render the dropdown menu', () => {
     name: /favorite dog/i
   })
 })
+
+it('should check the default selected option menu', () => {
+  render(<Menu />)
+  expect(screen.getByRole('option', { name: /yellow lab/i }).selected).toBe(true)
+})
+
+it('should display the correct number of options', () => {
+  render(<Menu />)
+  expect(screen.getAllByRole('option').length).toBe(2)
+})

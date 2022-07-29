@@ -8,9 +8,9 @@ export default function Menu() {
           name="dogs"
           id="dogs"
         >
-          <option value={'Black Lab'}>Black Lab</option>
-          <option value={'Chocolate Lab'}>Chocolate Lab</option>
-          <option value={'Yellow Lab'}>Yellow Lab</option>
+          <option value={"Black Lab"}>Black Lab</option>
+          <option value={"Chocolate Lab"}>Chocolate Lab</option>
+          <option value={"Yellow Lab"}>Yellow Lab</option>
         </select>
     </div>
   )
