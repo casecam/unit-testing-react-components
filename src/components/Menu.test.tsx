@@ -1,5 +1,4 @@
 import { render, screen } from '@testing-library/react'
-import user from '@testing-library/user-event';
 import Menu from './Menu';
 
 it('should render the dropdown menu', () => {
@@ -12,6 +11,7 @@ it('should render the dropdown menu', () => {
 
 it('should check the default selected option menu', () => {
   render(<Menu />)
+  // @ts-ignore
   expect(screen.getByRole('option', { name: /black lab/i }).selected).toBe(true)
 })
 
