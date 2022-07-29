@@ -1,16 +1,16 @@
-import React from 'react'
+interface ButtonProps {
+  count: number,
+  incrementor: () => void
+}
+export default function Button ({ count, incrementor}: ButtonProps) {
 
-export default function Button () {
-  const handleClick = (e: React.MouseEvent<HTMLElement>) => { 
-    console.log('clicked');
-  }
   return (
     <div className={wrapper}>
       <div 
         className={button}
-        onClick={handleClick}
+        onClick={incrementor}
       >
-          Count: 0
+          Count: {count}
       </div>
     </div>
   )
