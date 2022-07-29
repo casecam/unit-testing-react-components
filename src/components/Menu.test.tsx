@@ -12,10 +12,10 @@ it('should render the dropdown menu', () => {
 
 it('should check the default selected option menu', () => {
   render(<Menu />)
-  expect(screen.getByRole('option', { name: /yellow lab/i }).selected).toBe(true)
+  expect(screen.getByRole('option', { name: /black lab/i }).selected).toBe(true)
 })
 
 it('should display the correct number of options', () => {
   render(<Menu />)
-  expect(screen.getAllByRole('option').length).toBe(2)
+  expect(screen.getAllByRole('option').length).toBe(3)
 })
