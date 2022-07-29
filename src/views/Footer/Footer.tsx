@@ -2,6 +2,15 @@ import React from 'react'
 
 export default function Footer() {
   return (
-    <div>Footer</div>
+    <div className={footer}>
+      &copy;2020 CDW All rights reserved.
+    </div>
   )
 }
+
+const footer = `
+  flex
+  justify-end
+  text-gray-500
+  text-xs
+`

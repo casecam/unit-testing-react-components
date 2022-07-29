@@ -15,5 +15,4 @@ export default App;
 const app = `
   flex
   flex-col
-  justify-center
 `

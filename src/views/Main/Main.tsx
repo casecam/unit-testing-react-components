@@ -1,7 +1,14 @@
-import React from 'react'
+import Form from "../../components/Form";
 
 export default function Main() {
   return (
-    <div>Main</div>
+    <div className={main}>
+      <Form />
+    </div>
   )
 }
+
+const main = `
+  flex
+  justify-center
+`
