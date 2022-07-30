@@ -3,8 +3,6 @@ import { MenuProps } from "@mui/material"
 
 export default function Menu({ setDogType }: any) {
   const handleChange = (event: any) => {
-    console.log('setting dog type');
-    
     setDogType(event.target.value);
   }
   return (

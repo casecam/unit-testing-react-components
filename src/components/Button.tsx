@@ -3,13 +3,23 @@ import { ButtonProps } from "../utils/types"
 export default function Button ({ count, incrementor}: ButtonProps) {
   return (
     <div className={wrapper}>
-      <div 
-        data-testid="CounterButton"
-        className={button}
-        onClick={incrementor}
-      >
-          Count: {count}
-      </div>
+      {count <= 14 
+        ? 
+          <div 
+            data-testid="CounterButton"
+            className={button}
+            onClick={incrementor}
+          >
+              Count: {count}
+          </div>
+        : 
+          <div 
+          data-testid="CounterButton"
+          className={button}
+        >
+            Disabled
+        </div>
+      }
     </div>
   )
 }
