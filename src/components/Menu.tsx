@@ -16,7 +16,7 @@ export default function Menu({ setDogType }: any) {
           id="dogs"
           onChange={handleChange}
         >{dropDownOptions.map(option => {
-          return <option value={option}>{option}</option>
+          return <option key={option} value={option}>{option}</option>
         })}
         </select>
     </div>
