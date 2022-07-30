@@ -9,6 +9,10 @@ export interface FormProps {
   formState: string
   handleSubmit: React.FormEventHandler<HTMLFormElement>;
 }
+
+export interface MenuProps {
+  setDogType: Function
+}
 export interface MessageProps {
   message: string,
 }

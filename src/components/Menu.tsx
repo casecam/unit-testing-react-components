@@ -1,5 +1,12 @@
+import { dropDownOptions } from "../data/data"
+import { MenuProps } from "@mui/material"
 
-export default function Menu() {
+export default function Menu({ setDogType }: any) {
+  const handleChange = (event: any) => {
+    console.log('setting dog type');
+    
+    setDogType(event.target.value);
+  }
   return (
     <div className={menu}>
         <label htmlFor="dogs">Favorite Dog</label>
@@ -7,10 +14,10 @@ export default function Menu() {
           className={dropdown}
           name="dogs"
           id="dogs"
-        >
-          <option value={"Black Lab"}>Black Lab</option>
-          <option value={"Chocolate Lab"}>Chocolate Lab</option>
-          <option value={"Yellow Lab"}>Yellow Lab</option>
+          onChange={handleChange}
+        >{dropDownOptions.map(option => {
+          return <option value={option}>{option}</option>
+        })}
         </select>
     </div>
   )

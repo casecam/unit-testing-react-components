@@ -5,16 +5,16 @@ import Counter from "./Counter";
 export default function Main() {
   const [formState, setFormState] = useState('')
   const [message, setMessage] = useState('')
+  const [dogType, setDogType] = useState('Black Lab')
 
   const handleSubmit = (event: React.SyntheticEvent) => {
     event.preventDefault();
-    setMessage(`We submitted ${formState}`);
-
+    setMessage(`We submitted ${formState}, a ${dogType}`);
   };
 
   return (
     <div className={main}>
-      <Menu />
+      <Menu setDogType={setDogType} />
       <div className={wrapper}>
         <Form
           setFormState={setFormState}
