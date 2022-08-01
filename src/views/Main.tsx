@@ -15,7 +15,7 @@ export default function Main() {
   return (
     <div className={main}>
       <Menu setDogType={setDogType} />
-      <div className={wrapper}>
+      <div>
         <Form
           setFormState={setFormState}
           formState={formState}
@@ -45,7 +45,4 @@ const main = `
   pb-8
   mb-4"
   w-auto
-`
-const wrapper = `
-
 `

@@ -4,6 +4,7 @@ import Form from './Form';
 
 const submitHandler = jest.fn(event => event.preventDefault())
 const stateHandler = jest.fn()
+
 afterEach(() => submitHandler.mockReset())
 
 it('should render the form', () => {
